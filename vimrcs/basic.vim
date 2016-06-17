@@ -40,7 +40,19 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax enable
-set tabstop=4
 set expandtab
+
+set tabstop=4
 set shiftwidth=4
+
 set hlsearch
+set smarttab
+
+set ai " auto indent
+set si " smart indent
+
+" Smart way to move between windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
