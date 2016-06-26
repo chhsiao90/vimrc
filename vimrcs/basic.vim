@@ -23,6 +23,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'itchyny/lightline.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-scripts/peaksea'
+Plugin 'Konfekt/FastFold'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -50,6 +51,9 @@ set smarttab
 
 set ai " auto indent
 set si " smart indent
+
+" paste
+set pastetoggle=<F2>
 
 " Smart way to move between windows
 map <C-j> <C-W>j
