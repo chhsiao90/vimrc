@@ -55,6 +55,9 @@ set si " smart indent
 " paste
 set pastetoggle=<F2>
 
+" disabled Scratch Window
+set completeopt-=preview
+
 " Smart way to move between windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
