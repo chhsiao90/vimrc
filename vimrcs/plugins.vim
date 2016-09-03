@@ -24,20 +24,16 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 """"""""""""""""""""""
 let g:syntastic_python_checkers=['flake8']
 let g:syntastic_python_flake8_args='--ignore=E501'
+let g:syntastic_check_on_wq = 0
+map <leader>sc :SyntasticCheck<cr>
 
 """"""""""""""""""""""
 " => numbers
 """"""""""""""""""""""
 set number
 let g:numbers_exclude = ['nerdtree']
-nnoremap <F3> :NumbersToggle<CR>
-nnoremap <F4> :NumbersOnOff<CR>
-
-""""""""""""""""""""""
-" => colorscheme
-""""""""""""""""""""""
-set background=dark
-colorscheme peaksea
+nnoremap <F3> :NumbersToggle<cr>
+nnoremap <F4> :NumbersOnOff<cr>
 
 """"""""""""""""""""""
 " => nerdtree
@@ -54,3 +50,16 @@ let g:bufExplorerShowRelativePath=1
 let g:bufExplorerFindActive=1
 let g:bufExplorerSortBy='name'
 map <leader>o :BufExplorer<cr>
+
+""""""""""""""""""""""
+" => lightline
+""""""""""""""""""""""
+let g:lightline = {
+    \ 'colorscheme': 'wombat'
+    \ }
+
+""""""""""""""""""""""
+" => colorscheme
+""""""""""""""""""""""
+set background=dark
+colorscheme peaksea
