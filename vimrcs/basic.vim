@@ -20,11 +20,13 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'scrooloose/syntastic'
-Plugin 'itchyny/lightline.vim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'vim-scripts/peaksea'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Konfekt/FastFold'
 Plugin 'tpope/vim-fugitive'
+" colorscheme
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-scripts/peaksea'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -42,16 +44,28 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax enable
-set expandtab
 
+" indent
+set expandtab
 set tabstop=4
 set shiftwidth=4
-
-set hlsearch
 set smarttab
 
 set ai " auto indent
 set si " smart indent
+
+" searching
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
+
+" ignore compiled resources
+set wildignore=*.o,*~,*.pyc
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
+
+" scroll
+set so=7
 
 " paste
 set pastetoggle=<F2>

@@ -52,14 +52,8 @@ let g:bufExplorerSortBy='name'
 map <leader>o :BufExplorer<cr>
 
 """"""""""""""""""""""
-" => lightline
-""""""""""""""""""""""
-let g:lightline = {
-    \ 'colorscheme': 'wombat'
-    \ }
-
-""""""""""""""""""""""
 " => colorscheme
 """"""""""""""""""""""
 set background=dark
+let g:airline_theme='wombat'
 colorscheme peaksea
