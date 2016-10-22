@@ -20,14 +20,6 @@ autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 """"""""""""""""""""""
-" => syntastic
-""""""""""""""""""""""
-let g:syntastic_python_checkers=['flake8']
-let g:syntastic_python_flake8_args='--ignore=E501'
-let g:syntastic_check_on_wq = 0
-map <leader>sc :SyntasticCheck<cr>
-
-""""""""""""""""""""""
 " => numbers
 """"""""""""""""""""""
 set number
