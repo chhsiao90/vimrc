@@ -23,6 +23,7 @@ Plugin 'w0rp/ale'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
+Plugin 'fatih/vim-go'
 " colorscheme
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-scripts/peaksea'
