@@ -17,6 +17,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'fatih/vim-go'
+Plug 'kien/ctrlp.vim'
 " colorscheme
 Plug 'altercation/vim-colors-solarized'
 Plug 'vim-scripts/peaksea'
