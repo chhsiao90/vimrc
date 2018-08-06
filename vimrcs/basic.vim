@@ -3,33 +3,26 @@ filetype off                  " required
 
 set fileencodings=utf-8,big5,gbk
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'tpope/vim-sensible'
-Plugin 'corntrace/bufexplorer'
-Plugin 'scrooloose/nerdtree'
-Plugin 'myusuf3/numbers.vim'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'w0rp/ale'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tpope/vim-fugitive'
-Plugin 'fatih/vim-go'
+Plug 'tpope/vim-sensible'
+Plug 'corntrace/bufexplorer'
+Plug 'scrooloose/nerdtree'
+Plug 'myusuf3/numbers.vim'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'derekwyatt/vim-scala'
+Plug 'Shougo/neocomplete.vim'
+Plug 'w0rp/ale'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
+Plug 'fatih/vim-go'
 " colorscheme
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'vim-scripts/peaksea'
+Plug 'altercation/vim-colors-solarized'
+Plug 'vim-scripts/peaksea'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+call plug#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 " filetype plugin on
